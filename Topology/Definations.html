@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5em;
+            }
+            #container{
+                width: 60vw;
+                position: relative;
+                left: 20vw;
+            }
+            @media screen and (max-width: 800px) {
+                #container{
+                    width: 100%;
+                    left: 0;}
+            }
+        </style>
+    </head>
+<body>
+<div id="container">
+    <h3>Topology</h3>
+    <p>A topology on a set \(X\) is a collection \(\tau\) of subsets of \(X\) having the following properties:
+        <ol>
+            <li>\(\phi\) and \(X\) are in \(\tau\).</li>
+            <li>The union of the elements of any subcollection of \(\tau\) is in \(\tau\).</li>
+            <li>The intersection of the elements of any finite subcollection of \(\tau\) is in \(\tau\).</li>
+        </ol>
+        A set \(X\) for which a topology \(\tau\) has been specified is called a topological space.
+    </p>
+    <h3>Open set</h3>
+    <p>
+        If \(X\) is a topological space with topology \(\tau\), we say that a subset \(U\) of \(X\) is an open set of \(X\) if \(U\) belongs to the collection \(\tau\).
+    </p>
+    <h3>Coarser</h3>
+    <p>
+        Suppose that \(\tau\) and \(\tau ‘\) are two topologies on a given set \( X\). If \(\tau’ \supset \tau \),we say that \(\tau’\) is <b>finer</b> than \(\tau\) ; if \(\tau’\) properly contains \(\tau\) , we say that \(\tau’\) is <b>strictly finer</b> than \(\tau\) . We also say that \(\tau\) is <b>coarser</b> than \(\tau’\) , or <b>strictly coarser</b>, in these two respective situations. We say \(\tau\) is <b>comparable</b> with \(\tau’\) if either \(\tau’ \supset tau\) or \(\tau \supset \tau’\) .  
+    </p>
+    <h3>Closed set</h3>
+    <p>
+        A subset \(A\) of a topological space \(X\) is said to be closed if the set \(X − A\) is open.
+    </p>
+    <h3>Closure and Interior of a Set</h3>
+    <p>
+        Given a subset \(A\) of a topological space \(X\), the <b>interior</b> of \(A\) is defined as the union of all open sets contained in \(A\), and the <b>closure</b> of \(A\) is defined as the intersection of all closed sets containing \(A\).
+    </p>
+    <h3>Nhood system</h3>
+    <p>
+            If \(X\) is a topological space and \(x \in X\), a <b>neighborhood</b>
+    (hereafter abbreviated nhood) of \(x\) is a set \(U\) which contains an open set V
+    containing \(x\). Thus, evidently, \(U\) is a nhood of \(x\) iff \(x\) in \(U^{\circ}\). The collection
+    \(\mathbb{U}_x\), of all nhoods of \(x\) is the <b>nhood system</b> at \(x\).  
+    </p>
+    <h3>Nhood base</h3>
+    <p>A nhood base at \(x\) in the topological space \(X\) is a subcollection ℬ\(_x\) taken from the nhood system \(x\) , having the property that each \(U \in x\) contains some \(V \in\) ℬ\(_x\). That is, x must be determined by ℬ\(_x\)
+        as follows:<br>
+        \(x = \{U \subset X | V \subset U\) for some \( V \in\) ℬ\(_x\}\)
+    </p>
+    <h3>Supspace</h3>
+    <p>
+        If \((X, \tau)\) is a topological space and \(A \subset X\), the collection \(\tau’ =\{G \cap A | G \in \tau\}\) is a topology for \(A\), called the relative topology for \(A\). The fact that a subset of \(X\) is being given this topology is signified by referring to it as a subspace of \(X\).  
+    </p>
+    <h3>Continuous function</h3>
+    <p>
+        Let \(X\) and \(Y\) be topological spaces. A function \(f : X \to Y\) is said to be continuous if
+        for each open subset \(V\) of \(Y\), the set \(f^{-1}(V)\) is an open subset of \(X\).  
+    </p>
+</div>
+</body>
+</html>

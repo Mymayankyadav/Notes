@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5em;
+            }
+            #container{
+                width: 60vw;
+                position: relative;
+                left: 20vw;
+            }
+            @media screen and (max-width: 800px) {
+                #container{
+                    width: 100%;
+                    left: 0;}
+            }
+        </style>
+    </head>
+<body>
+    <div id="container">
+    <h3>Theorem 17.1</h3>
+    <p>
+    Let \(X\) be a topological space. Then the following conditions hold:
+    <ol>
+        <li>\(\phi\) and \(X\) are closed.</li>
+        <li>Arbitrary intersections of closed sets are closed.</li>
+        <li>Finite unions of closed sets are closed.</li>
+    </ol>
+    </p>
+    <h3>Theorem 17.2.</h3>
+    <p>
+        Let \(Y\) be a subspace of \(X\). Then a set \(A\) is closed in \(Y\) if and only if it equals the intersection of a closed set of \(X\) with \(Y\).  
+    </p>
+    <h3>Theorem 17.4.</h3>
+    <p>
+        Let \(Y\) be a subspace of \(X\); let \(A\) be a subset of \(Y\) ; let \(\overline{A}\) denote the closure of \(A\) in \(X\). Then the closure of \(A\) in \(Y\) equals \(\overline{A} \cap Y\) 
+    </p>
+    <h3>3.11 Theorem</h3>
+    <p>
+        The interior operation \(A \to A^{\circ}\) in a topological
+        space \(X\) has the following properties
+        <ol>
+            <li>\(A \subset A\).</li>
+            <li>\((A^{\circ})^{\circ} =A^{\circ}\).</li>
+            <li>\((A \cap B)^{\circ} =A^{\circ} \cap B^{\circ}\).</li>
+            <li>\(X^{\circ} = X\).</li>
+            <li>\(G\) is open iff \(G^{\circ} = G\).</li>
+        </ol>
+        Conversely, given any map \(A \to A^{\circ}\) of \(\mathbb{P}(X)\) into \(\mathbb{P}(X)\)  in a set \(X\), satisfying 1 through 4, if open sets are defined in \(X\) using 5,
+        the result is a topology on \(X\) in which the interior of a set \(A \subset X\)
+        is just \(A^{\circ}\).
+    </p>
+    <h3>4.5 Theorem</h3>
+    <p>
+        Let \(X\) be a topological space and for each \(x \in X\),
+        let ℬ\(_x\) be a nhood base at \(x\). Then
+        <ol>
+            <li>if \(V \in\) ℬ\(_x\), then \(x\) \in \(V\),</li>
+            <li>if \(V_1, V_2 \in\) ℬ\(_x\), then there is some \(V_3 \in\) ℬ\(_x\) such that \(V_3 \subset V_1 \cap V_2\),</li>
+            <li>if \(V \in\) ℬ\(_x\), there is some \(V_0 \in\) ℬ\(_x\) such that if \(y \in V_0\), then there is some \(W \in\) ℬ\(_y\) with \(W \subset V\), and furthermore,</li>
+            <li>\(G \subset X\) is open iff \(G\) contains a basic nhood of each of its points.</li>
+        </ol>
+        Conversely, in a set \(X\), if a collection ℬ\(_x\) of subsets of \(X\) is assigned to each \(x \in X\) so as to satisfy 1,2 and 3 and if we define “open” using 4, the result is a topology on \(X\) in which ℬ\(_x\) is a nhood base at \(x\), for each \(x \in X\).
+    </p>
+    <h3>4.7 Theorem</h3>
+    <p>
+        Let \(X\) be a topological space and suppose a nhood base has been fixed at each \(x \in X\). Then
+        <ol>
+            <li>\(G \subset X\) is open iff \(G\) contains a basic nhood of each of its points,</li>
+            <li>\(F \subset X\) is closed iff each point \(x \notin F\) has a basic nhood disjoint from \(F\),</li>
+            <li>\(\overline{E}\) = {\(x \in X\) | each basic nhood of \(x\) meets \(E\)},</li>
+            <li>\(E^{\circ}\) = {\(x \in X\) | some basic nhood of \(x\) is contained in \(E\)},</li>
+            <li>Fr (\(E\)) = {\(x \in X\) | each basic nhood of \(x\) meets both \(E\) and \(X- E\)}.</li>
+        </ol>
+    </p>
+    <h3>4.8 Theorem</h3>
+    <p>
+        (Hausdorff criterion) For each \(x \in X\), let ℬ\(_x^1\) be a nhood base at \(x\) for a topology \(\tau_1\) on \(X\), and let ℬ\(_x^2\) be a nhood base at \(x\) for a topology \(\tau_2\) on \(X\). Then \(\tau_1 ⊂ \tau_2\) iff at each \(x \in X\), given \(B^1 \in\) ℬ\(_x^1\) , there is some \(B^2 \in\) ℬ\(_x^2\) such that \(B^2 ⊂ B^1\)
+    </p>
+    <h3>6.3 Theorem</h3>
+    <p>
+        If \(A\) is a subspace of a topological space \(X\), then:
+        <ol>
+            <li>\(H\) \(\subset\) \(A\) is open in \(A\) iff \(H\) = \(G\) \(\cup\) \(A\), where \(G\) is open in \(X\),</li>
+            <li>\(F\) \(\subset\) \(A\) is closed in \(A\) iff \(F = K\) \(\cup\) \(A\) where \(K\) is closed in \(X\),</li>
+            <li>if \(E\) \(\subset\) \(A\), then \(Cl_A E\) = \(A\) \(\cup\) \(Cl_X E\),</li>
+            <li>if \(x\) \(\in\) \(A\), then V is a nhood of x in \(A\) iff V = U \(\cup\) \(A\), where U is a nhood of \(x\) in \(X\),</li>
+            <li>if \(x\) \(\in\) \(A\), and if ℬ\(_x\) is a nhood base at \(x\) in \(X\), then {\(B\) \(\cup\) \(A\) | \(B\) \(\in\) ℬ\(_x\)} is a nhood base at \(x\) in \(A\),</li>
+            <li>if ℬ is a base for \(X\), then {\(B\) \(\cup\) \(A\) | \(B\) \(\in\) ℬ} is a base for \(A\).</li>
+        </ol>
+    </p>
+    <h3>Theorem 18.1</h3>
+    <p>
+        Let \(X\) and \(Y\) be topological spaces; let \(f : X \to Y\). Then the
+        following are equivalent:
+        <ol>
+            <li>\(f\) is continuous.</li>
+            <li>For every subset \(A\) of \(X\), one has \(f (\overline{A}) \subset \overline{f (A)}\).</li>
+            <li>For every closed set \(B\) of \(Y\), the set \(f^{-1}(B)\) is closed in \(X\).</li>
+            <li>For each \(x \in X\) and each neighborhood \(V\) of f (x), there is a neighborhood \(U\) of \(x\) such that \(f (U) \subset V\) .</li>
+        </ol>
+        If the condition in 4 holds for the point \(x\) of \(X\), we say that <b>\( f\) is continuous at
+        the point \(x\)</b>.  
+    </p>
+    <h3>7.3 Theorem</h3>
+    <p>
+        If \(X\), \(Y\) and \(Z\) are topological spaces and \(f : X \to Y\) and \(g : Y \to Z\) are continuous, then \(g \circ f : X \to Z\) is continuous.  
+    </p>
+    <h3>7.5 Theorem</h3>
+    <p>
+        Restriction, on the subset, of continuous function is continuous.
+    </p>
+
+</div>
+</body>
+</html>
