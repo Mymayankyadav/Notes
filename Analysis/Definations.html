@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5em;
+            }
+            #container{
+                width: 60vw;
+                position: relative;
+                left: 20vw;
+            }
+            @media screen and (max-width: 800px) {
+                #container{
+                    width: 100%;
+                    left: 0;}
+            }
+        </style>
+    </head>
+<body>
+    <div id="container">
+    <h3>Limits of functions</h3>
+    <p>
+        Let \(X\) and \(Y\) be metric spaces; suppose \(E \subset X \), \(f\) maps \(E\) into \(Y\), and \(p\) is a limit point of \(E\). We write \(f \to q \) as \(x \to p\), or $$\lim_{x \to p}f(x)=q$$
+        if there is a point \(q \in Y\) with the following property: For every \(\varepsilon &gt; 0\) there exists a \(\delta &gt; 0\) such that $$d_Y(f(x),q) &lt; \varepsilon $$ for all points \(x \in E\) for which $$0 &lt; d_X(x,p) &lt; \delta$$ 
+    </p>
+    <h3>Continuous functions</h3>
+    <p>
+    Function is said to <em>continuous</em> iff $$\lim_{x \to p}f(x)=f(p)$$
+    </p>
+    <h3>Uniformly continuous</h3>
+    <p>
+        let \(f\) be a mapping of a metric space \(X\) into metric space \(Y\). We say that \(f\) is uniformly continuous on \(X\) if for every \(\varepsilon &gt; 0\)
+        there exists \(\delta &gt; 0 \) such that $$d_Y(f(p),f(q)) &lt; \varepsilon$$ for all \(p\) and \(q\) in \(X\) for which \(d_X(p,q) &lt; \delta \)
+    </p>
+</div>
+</body>
+</html>

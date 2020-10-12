@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5em;
+            }
+            #container{
+                width: 60vw;
+                position: relative;
+                left: 20vw;
+            }
+            @media screen and (max-width: 800px) {
+                #container{
+                    width: 100%;
+                    left: 0;}
+            }
+        </style>
+    </head>
+<body>
+    <div id="container">
+    <h2>Chapter 2</h2>
+    <h3>2.2.5 Theorem</h3>
+    <p>If \(R\) is a ring with 1 and \(I\) is a ideal in \(R\) such that \(I \neq R\), then there is a maximal ideal \(M\) of the same kind as \(I\) such that \(I \subseteq M\)
+    <ol><span style="font-weight: bold;">Remarks:</span><li>The above theorem is not true if R has no unity.</li>
+        <li>Above theorem need not be true for minimal ideals of R even if R is commutative with 1.</li></ol>
+    </p>
+    <h3>2 .2.9 Theorem</h3>
+    <p> The set of all nilpotent elements in a commutative ring \(R\) with 1 is the intersection of all prime ideal, i. e., \(N = N'\).</p>
+    <h3>2.4.1 Proposition</h3> 
+    <p>Suppose \(R\) is a ring with 1. Let I be a left ideal. Then the following are equivalent.
+    <ol><li>\(I\) = \(R\).</li><li>1 \(\in\) \(I\).</li><li>\(I\) contains a unit.</li><li>\(I\) contains an element which has a left inverse.</li></ol>
+    </p>
+    <h3>2.4.5 Proposition</h3>
+    <p>Suppose \(R\) contains 1, and \(I\) is a 2-sided ideal of R. Then I = R \(\iff\) 1 \(\in\) \(I\) \(\iff\) I contains a unit \(\iff\) I contains an element which has a left inverse or a right inverse.
+    </p>
+    <h3>2.4.6 Theorem</h3>
+    <p>Let \(R\) be a ring with 1 . Then \(R\) is a division ring \(\iff\) (0) and \(R\) are the only left ideals in \(R\) \(\iff\) (0) and \(R\) are the only right ideals in \(R\).</p>
+    <h3>2.4.9 Theorem</h3>
+    <p>
+    Let \(R\) be a non-zero ring in which the multiplication is non-trivial. Then \(R\) is a division ring if and only if \(R\) has no left ideals other than (0) and \(R\), ( i. e., \(R\) contains a pair x , y such that xy\(\neq\)0. Then if \(R\) has no left (resp. right) ideals other than (0) and \(R\), \(R\) has 1 and \(R\) is a division ring) .
+    </p>
+    <h3>2.4.10 Theorem</h3>
+    <p>
+        Let R be a ring with 1 and \(S = M_n(I)\) , n \(\geq\) 1. Then we have the following.
+        <ol><li>For a left ideal \(J\) in \(R\), \(M_n(I)\) is a left ideal in \(S\).</li><li>For a right ideal \(I'\) in \(R\), \(M_n(I)\) is a right ideal in \(S\).</li><li>For a 2-sided ideal \(J\) of \(R\), \(M_n(I)\) is a 2-sided ideal of \(S\).</li></ol>
+        The converse is true only for 2-sided ideal, i. e., every two sided ideal \(K\) in \(S\) is of the form \(K = M_n(I)\)) for some 2-sided ideal \(J\) in \(R\).
+    </p>
+    <h3>2.5.2 Proposition</h3>
+    <p>
+    <ol><li>Sum of two ideals of the same kind is again an ideal of the same kind.</li><li>Addition of ideals is commutative and associative.</li></ol> 
+    </p>
+    <h3>2.5.4 Proposition</h3>
+    <p>
+        <ol><li>Product of two ideals of the same kind is again an ideal of the same kind.</li><li> Product of ideals is associative but need not be commutative.</li></ol> 
+        <ol><b>Remarks:</b>
+        <li> \(IJ\) is a left ideal if \(I\) is a left ideal and \(J\) any subset of \(R\).</li><li>\(IJ\) is a right ideal if \(I\) is any subset of \(R\) and \(J\) is a right ideal. Furthermore, if \(R\) has 1, then \(IR = I = RI\). However, if \(R\) is without 1 , then \(IR \subseteq I\) and \(RI \subseteq I\) (equality need not hold).</li><li>The set of all additive subgroups of \( R, + \) is a commutative a emigroup with identity under addition but not a group.</li><li>The set of all left/right/2-sided ideals is a sub-semigroup with identity under addition but not a group.</li><li>The set of all left/right/2-sided ideals in \(R\) is a semigroup with identity (namely, \(R\)), under multiplication (provided \(R\) has 1 ) but not a group.</li></ol>
+    </p>
+    <h3>2.5.11 Proposition</h3>
+    <p>Let \(R\) be a commutative ring. Then a nil ideal \(I\) is nilpotent if \(I\) is finitely generated.</p>
+    <h3>2.6.2 Theorem</h3>
+    <p>
+        The natural multiplication of cosets of \(I\), namely, \((a + I) (b + I) = ab + I\), make \(R/I\) into a ring if and only if \(I\) is a 2-sided ideal. For a 2-sided ideal \(I\), \(R/I\) is called the quotient ring or residue ring of \(R\) modulo \(I\).
+    </p>
+    <h3>2.7.1 Theorem</h3>
+    <p>
+        Let \(I\) be a 2-sided ideal in \(R\) and \(S = R/I\), the quotient ring of \(R\) modulo \(I\). Then we have the following.
+        <ol><li>The set of all subgroups of \((R/I, +)\) is naturally bijective with the set of all subgroups of \(R\) each containing \(I\).</li><li>The set of all subrings of \(R/I\) is naturally bijective with the set of subrings of R each containing \(I\).</li><li>The set of all left/right/2-sided ideals of \(R/I\) is naturally bijective with the set of left/right/2-sided ideals of \(R\) each containing \(I\).</li></ol> 
+    </p>
+    <h3>2.7.2 Theorem</h3>
+    <p>
+        Let \(R\) be a commutative ring with 1 and \(I\) be an ideal in \(R\). Then we have the following. 
+        <ol><li>\(R/I\) is an integral domain if and only if \(I\) is a prime ideal in \(R\).</li><li>\(R/I\) is a field if and only if \(I\) is a maximal ideal in \(R\). If \(I\) is maximal, \(R/I\) is called the residue field of \(R\) at \(I\).</li><li>A maximal ideal ( in a commutative ring) is a prime ideal but not conversely.</li></ol>  
+    </p>
+    <h3>2.7.4 Corollary</h3>
+    <p>
+        For \(2 \leq n\in \mathbb{N}\), the ring \(\mathbb{Z}/n \mathbb{Z} \) is a field \(\iff\) \(\mathbb{Z}/n\mathbb{Z}\) is an integral domain \(\iff n\)  is a prime number.
+    </p>
+    <h3>2.7.5 Proposition</h3>
+    <p>
+        For n \(\geq\) 2, the ring \(\mathbb{Z}/n\mathbb{Z} \)  has no non-trivial nilpotent elementa if and only if \(n\) is square free.
+    </p>
+    <h3>2.7.6 Theorem</h3>
+    <p>
+        Suppoae \(R\) ia a commutative ring with 1 . Then \(a(X) = a_0 + a_1X + a_2X^2 + · · · + a_TX^T \in R[X]\) is a unit in \(R[X]\) if and only if \(a_0\) is a unit in R and \(a_1, a_2, · · · , a_T\) are all nilpotent in \(R\).
+    </p>
+    <h3>2.8.1 Proposition</h3>
+    <p>
+        Let \(R\) be a ring with 1 . Then the set \(M_R\) of all non-units in \(R\) is precisely the union of all proper left/right ideals of \(R\) which in turn is also equal to the union of all maximal left/right ideals of \(R\).
+    </p>
+    <h3>2.8.3 Proposition</h3>
+    <p>
+        A ring \(R\) with 1 is a local ring if and only if it has a unique maximal ideal, maxima/ simultaneously as a left/right/2-sided ideal.
+    </p>
+    <h3>2.8.8 Proposition</h3>
+    <p>
+        For n\(\geq\) 2, \(\mathbb{Z}/n\mathbb{Z} \) is a local ring if and only if \(n\) is a power of a prime.
+    </p>
+    <h2>Chapter 3</h2>
+    <h3>3.1.5 Theorem</h3>
+    <p>
+        Let \(I\) be an ideal in a ring \(R\). Then \(I\) is a 2-sided ideal in \(R\) if and only if \(I\) is the kernel of some homomorphism \(f : R \to S\) for a suitable ring \(S\).
+    </p>
+    <h3>3.1.6 Theorem</h3>
+    <p>
+        A homomorphism \(f : R \to S\) is a monomorphism if and only if Ker(\(f\)) = (0).
+        <ol><b></b><li>Suppose \(f : R \to S\) and \(g : S \to T\) are homomorphisms of rings. Then \(Ker(g \circ f) \supseteq Ker(f)\) (equality need not hold) . If \(g \circ f\) is a monomorphsim, then \(f\) is a monomorphism.
+        </li><li>Similarly, we have \(Im(g \circ f) \subseteq g(Im(f))\) (equality need not hold) . If \(g \circ f\) is an epimorphism, then \(g\) is an epimorphism.
+        </li><li>Any homomorphism \(f : R \to S\) from a simple ring \(R\) (to any ring S) is either identically zero or a monomorphism (because Ker(\(f\)) is a 2-sided ideal in \(R\))
+        </li></ol>
+    </p>
+    <h3>3.2.1 The Epimorphism Theorem</h3>
+    <p>
+        Let \(f : R \to S\)  be a homomorphism of rings with \(I = Ker(f)\). Then there exis ts a unique monomorphism \(T : R/I \to S\) such that the diagram commutes, i. e., \(f = \bar{f} \circ \eta\), where \(\eta\) is the natural map from \(R\) to \(R/I\).Moreover, \(T\) is an isomorphism if and only if \(f\) is an epimorphism.
+    </p>
+    <h3>3.2.2 Theorem: (Quotient of a quotient)</h3>
+    <p>
+         If \(I \subseteq J\) are both 2-sided ideals in \(R\), then \((R/I)/(J/I)\) is naturally isomorphic to \(R/J\).
+    </p>
+    <h3>3.2.3 Theorem</h3>
+    <p>
+        Suppose \(I\) and 1 are 2-sided ideals in a ring \(R\). Then the natural map \(\eta_{IJ} : R/I \to R/J\), defined by \(a + I \to a + J\) is well-defined if and only if \(I \subseteq J\) . Moreover, \(\eta_{IJ}\) is an epimorphism whose kernel is \(J/I\). Hence \((R/I)/(J/I)\) is ismomorphic to \(R/J\) .
+    </p>
+    <h3>3.2.5 Corollary</h3>
+    <p>Let \(f : R \to S\) be a homomorphi8m of rings . Then we have the following.
+    <ol><li>\(Ker(f)\) is a prime ideal if \(S\) is an integral domain.</li><li>\(Ker(f)\) is a maximal ideal if \(f\) is surjective and \(S\) is a field.</li></ol>
+    </p>
+    <h3>3.2.6 Theorem</h3>
+    <p>
+        If \(I\) is a 2-sided ideal of \(R\), then \(I[X]\) is a 2-sided ideal of \(R[X]\) and the quotient ring \(R[X] /I[X]\) is naturally isomorphic to \((R/I)[X]\) .
+    </p>
+    <p>
+        <b>Remarks:</b>
+        <ol><li>
+            Image of an additive subgroup of \(R\) is an additive subgroup of \(S\), i. e., if \(A\) is a subgroup of \((R, +)\), then \(f(A)\) is a subgroup of \((S, +)\).
+        </li><li>
+            Image of an ideal (left/right/2-sided) of \(R\) need not be an ideal in \(S\) unless\(f\) is an epimorphism.
+        </li><li>
+            Inverse image of a subgroup of \((S, +)\) is a subgroup of \((R, +)\) and inverse image of an ideal in \(S\) is an ideal in \(R\).
+        </li><li>
+            Inverse image of a prime ideal is a prime ideal in \(R\) if both \(R\) and \(S\) are commutative.
+        </li><li>
+            Inverse image of a maximal ideal in \(S\) need not be a maximal ideal in \(R\) unless \(f\) is surjective.
+        </li><li>
+            Homomorphic image of a PIR is a PIR
+        </li></ol>
+    </p>
+    <h3>3.4.4 Theorem</h3>
+    <p>
+        For any commutative integral domain \(R\) with 1 , \(\mathbb{Q}(R)\) is the smallest field containing \(R\) as a subring, having the same identity as \(R\), smallest in the sense that if \(K\) is a field containing \(R\) as a subring, then \(K \supseteq \mathbb{Q}(R)\) as a subfield. This \(\mathbb{Q}(R)\) is unique upto isomorphism, called the field of fractions of R.
+    </p>
+    <h2>Chapter 4</h2>
+    <h3>4.1.4 Proposition</h3>
+    <p>Let \(a, b \in R*\). Then \(a\) and \(b\) are associates of each other \(\iff  a = ub\) for some unit \(u \in R \iff (a) = (b)\) .</p>
+    <h3>4.1.8 Proposition</h3>
+    <p>A prime is irreducible but not conversely.</p>
+    <h3>4.1.9 Theorem</h3>
+    <p>
+        Let \(a\) be a non-zero non-unit in a commutativeintegral domain \(R\). Then we have the following.
+    <ol><li>The element \(a\) is irreducible in \(R\) if and only if the ideal (a) is maximal among all principal ideals other than \(R\), i. e., there is no principal ideal in \(R\), other than \(R\), properly containing \((a)\).</li><li>The element \(a\) is prime in \(R\) if and only if the ideal \((a)\) is a non-zero prime ideal in \(R\).</li></ol>
+    </p>
+    <h3>Remark</h3>
+    <p>
+        Given \(a, b \in R^*\), if gcd (resp. lcm) of \(a\) and \(b\) exists, then it is easy to see that it is unique upto associates and is denoted by gcd(\(a, b\)) (resp. lcm(\(a, b\))) .
+    </p>
+    <h3>4.2.2 Proposition</h3>
+    <p>
+        A Euclidean domain \(R\) has unity and whose group of units is given by \(U(R) =\) {\(a \in R^* | d(a) = d(1)\)}.
+    </p>
+    <h3>Examples of Euclidean domain</h3>
+    <p>
+        <ol><li>The ring of integers \(\mathbb{Z}\) is Euclidean.</li><li>The ring \(\mathbb{Z}[i]\) of Gaussian integers is Euclidean.</li><li>\(R = K[X]\), the polynomial ring in one variable over a field \(K\) is Euclidean.</li><li>\(R = K[[X]]\) , the formal power series ring in one variable over a field \(K\) is Euclidean.</li></ol>
+    </p>
+    <h3>4.3.1 Theorem</h3>
+    <p>
+        Every Euclidean domain is a PID ( with 1).
+    </p>
+    <h3>4.3.3 Theorem</h3>
+    <p>
+        Let \(R\) be a PID ( with 1 ) . Then we have the following.
+        <ol><li>Every irreducible element is a prime in \(R\).</li><li>Every non-zero prime ideal is maximal in \(R\).</li></ol>
+    </p>
+    <h3>4.3.4 Theorem</h3>
+    <p>
+        For a commutative integral domain R with unity, the following are equivalent.
+        <ol><li>\(R\) is a field.</li><li>R[X] is Euclidean.</li><li>R[X] is a PID.</li></ol> 
+    </p>
+    <h3>4.3.5 Theorem</h3>
+    <p>
+        Let \(R\) be a PID with 1 and \(a, b \in R^*\). Then we have
+        <ol><li>
+            \(d = gcd (a, b) \iff (d) = (a) + (b)\), (in particular, \(a, b\) are coprime to each other if and only if \(\exists x, y \in R\) such that \(1 = ax + by\)) and
+        </li><li>
+            \(l = lcm (a, b) \iff (l) = (a) \cap (b)\).
+        </li></ol>
+    </p>
+    <h3>4.4.2 Theorem</h3>
+    <p>
+        Every PID is a factorisation domain.
+    </p>
+    <h3>4.4.3 Proposition</h3>
+    <p>
+        If \(d\) is a positive integer, then the ring \(\mathbb{Z}[i\sqrt{d}]\) is a factorisation domain.
+    </p>
+    <h3>4.5.3 Theorem</h3>
+    <p>
+        A domain \(R\) is a UFD if and only if \(R\) is an FD in which every irreducible element is a prime
+    </p>
+    <h3>4.5.5 Corollary</h3>
+    <p>
+        Every PID is a UFD (by Theorems (4.3.3 ) ( 1 ) and (4.4.2) above)
+    </p>
+    <h3>4.5.10 Proposition</h3>
+    <p>
+        The content of a product of polynomial is the product of their contents and in particular, the product of primitive polynomials is primitive.
+        <ol> <b>NOTE:</b><li> Any non-zero polynomial \(f(X)\) can be written as a
+        product of a non-zero scalar and a primitive polynomial because
+        \(f(X)/c(f)\) is primitive and \(c(f)\) is a non-zero scalar.</li>
+        <li> Any irreducible polynomial is primitive.</li></ol>
+    </p>
+    <h3>4.5.11 Gauss Lemma</h3>
+    <p>
+        A primitive polynomial \(f(X) \in R[X]\) is irreducible in \(R[X]\) if and only if \(f(X)\) is irreducible in \(K[X]\) where \(K\) is the field of fraction of \(R\).
+    </p>
+    <h3>4.5.12 Theorem (Gauss)</h3>
+    <p>
+        Let \(R\) be a domain. Then \(R[X]\) is a UFD if and only if \(R\) is a UFD .
+    </p>
+</div>
+</body>
+</html>

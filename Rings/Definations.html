@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5em;
+            }
+            #container{
+                width: 60vw;
+                position: relative;
+                left: 20vw;
+            }
+            @media screen and (max-width: 800px) {
+                #container{
+                    width: 100%;
+                    left: 0;}
+            }
+        </style>
+    </head>
+<body>
+    <div id="container">
+    <h3>Division in Domian</h3>
+    <p>Let \(a,b \in R, a\neq b\). We say that \(a\) <em>divides</em> \(b\) or \(a\) is a <em>divisor</em> of \(b\) and written \(a|b\) if there exists \(c \in R\) such that \(b = ac\) </p>
+    <h3>Associates</h3>
+    <p>Two elements \(a\) and \(b\) in \(R^*\) are said to be associates of each other if \(a | b\) and \(b | a\).</p>
+    <h3>Irreducible element</h3>
+    <p>
+        A non-zero non-unit \(a \in R\) is said to be irreducible if \(a = be\), then either \(b\) or \(c\) is a unit, i.e., \(a\) cannot be written as a product of two non-units or equivalently, the only divisors of \(a\) are its associates or units.
+    </p>
+    <h3>Prime element</h3>
+    <p>A non-zero non-unit \(a \in R\) is said to be \(a\) prime if \(a | bc, (b, c \in R)\), then either \(a | b\) or \(a | c\).</p>
+    <h3>Greatest common divisor (gcd)</h3>
+    <p>
+         Given \(a, b \in R^*\), an element \(d \in R^*\) is called a greatest common divisor of \(a\) and \(b\) if
+         <ol><li>\(d | a\) and \(d | b\), i.e., \(d\) is a common divisor of \(a\) and \(b\) and</li><li>\(c | a\) and \(c | b\ \implies \)  \(c | d\), i.e., \(d\) is greatest among the common divisors of \(a\) and \(b\).</li></ol>
+    </p>
+    <h3>Least common multiple (lcm)</h3>
+    <p>
+        Given \(a, b \in R^*\), an element \(l \in R^*\) is called a leaat common multiple of \(a\) and \(b\) if
+         <ol><li>\(a | l\) and \(a | l\), i.e., \(l\) is a common multiple of \(a\) and \(b\) and</li><li>\(a | m\) and \(b |m \implies l| m\), i.e., \(l\) is least among all the common multiples of \(a\) and \(b\).</li></ol>   
+    </p>
+    <h3>Coprime elements</h3>
+    <p>
+        If the gcd of two elements \(a , b\) exists and is equal to 1 , i.e., units are the only common divisors of \(a\) and \(b\), we say that \(a\) and \(b\) are coprime to each other.
+    </p>
+    <h3>Euclidean domain</h3>
+    <p>
+        A commutative integral domain \(R\) (with or without unity) is called a Euclidean domain if there is a map \(d : R^* \to \mathbb{Z}^+\) such that
+        <ol><li>\(\forall a, b \in R^*, a | b \implies d(a)\leq d(b)\) or equivalently, \(d(x) \leq d(xy)\) and</li><li>\(\forall a \in R\) and \(b \in R^*, \exists q,r \in R\) (depending on \(a\) and \(b\)) such that \(a = qb + r\) with either \(r = 0\) or else \(d(r)\) less than \(d(b)\).</li></ol>
+    </p>
+    <h3>Factorisation Domain</h3>
+    <p>
+        A commutative integral domain R (with 1) is called a factorisation domain (FD) if every non-zero element \(x \in R\) can be written as a unit times a finite product of irreducible elements.
+    </p>
+    <h3>Unique Factorisation Domain</h3>
+    <p>
+        A domain \(R\) is called a unique factorisation domain (UFD) if
+        <ol><li>\(R\) is a factorisation domain, i.e., every non-zero element can be factored into a unit times a finite product of irreducibles and</li><li>the factorisation into irreducibles is unique upto order and associates, i.e., if \(x \in R^*\) is factored as \(x = u \cdot a_1 \cdot a_2 \cdot\cdot\cdot a_r = v \cdot b_1 \cdot b_2 \cdot\cdot\cdot b_s\). where \(u, v\) are units and \(a_i\)'s, \(b_j\)'s are irreducibles, then \(r = s\) and each \(a_i\) is an associate of a \(b_j\) and vice-versa.</li></ol>
+    </p>
+    <h3>Content of a polynomial</h3>
+    <p>
+        Given a non-zero polynomial \(f(X) \in R[X]\) , the gcd of the coefficients of \(f(X)\) is called the content of \(f(X)\) and is denoted by \(c(f(X))\) or simply \(c(f)\). \(R\) is UFD.
+    </p>
+    <h3>Primitive polynomial</h3>
+    <p>
+        A non-zero polynomial f(X ) is called primitive if its content is 1 , i.e., its coefficients are collectively coprime.
+    </p>
+</div>
+</body>
+</html>

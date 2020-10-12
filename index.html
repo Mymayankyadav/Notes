@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #h2tag{
+                top:30vh;
+                position: absolute;
+                left: 40vw;
+                font-size: 1.5em;
+                padding: 10px;
+            }
+            a{
+                color: red;
+                padding: 5px;
+                font-family: sans-serif;
+                text-decoration: none;
+                transition-property:background-color,color;
+                transition-delay: 100ms;
+                transition-duration: 0.3s;
+            }
+            a:hover{
+                background-color: red;
+                color:  white;
+            }
+            @media screen and (max-width: 800px) {
+                #h2tag{
+                    width: 100%;
+                    left: 0;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="h2tag">
+        <h2><a href="./Rings/path.html">Rings</a></h2>
+        <h2><a href="./Analysis/path.html">Analysis</a></h2>
+    </div>
+    </body>
+</html>

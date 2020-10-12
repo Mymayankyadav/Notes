@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5em;
+            }
+            #container{
+                width: 60vw;
+                position: relative;
+                left: 20vw;
+            }
+            @media screen and (max-width: 800px) {
+                #container{
+                    width: 100%;
+                    left: 0;}
+            }
+        </style>
+    </head>
+<body>
+    <div id="container">
+    <h3>4.8 Theorem</h3>
+    <p>
+        Let \(f(p) \in V\) where \(V\) is open set in \(Y\), there would exist a neighbourhood of radius epsilon such that \(N_{\varepsilon}(f(p)) \subset V\)
+        since \(f\) is continuous there would exist \(\delta\) such that whenever \(d_Y(f(p),f(x)) &lt; \varepsilon \) then \(d_X(x,p) &lt; \delta\)
+        now these \(f(x) \in V\) hence all \(x\)'s\(\in f^{-1}(V)\) forming a \(\delta\) neighbourhood. Therefore \(f^{-1}(V)\) is open<br>
+        Conversely,  if we create a open \(\varepsilon\)-neighbourhood around \(f(p)\)=\(V\) then we know that \(f^{-1}(V)\) is open in \(X\), there would be \(\delta\)-neighbourhood, subset of \(f^{-1}(V)\), hence is \(f(x)\in\) \(\varepsilon\)-neighbourhood
+    </p>
+    <h3>4.14 Theorem</h3>
+    <p>
+        If we choose any open cover of \(f(X)\), take inverse image of every set in that open cover then it would be a cover of \(X\)
+        hence there would be some finite open subcover, now if \(x \in X\) then it would belong to one of the open set of finite subcover, say \(x\in f^{-1}(V_{\alpha})\) then \(f(x) \in V_{\alpha}\)
+        which proves that \(f(X)\) is compact.
+    </p>
+    <h3>4.19 Theorem</h3>
+    <p>
+        
+    </p>
+</div>
+</body>
+</html>
