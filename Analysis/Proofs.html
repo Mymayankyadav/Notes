@@ -41,8 +41,30 @@
     </p>
     <h3>4.19 Theorem</h3>
     <p>
-        
+        Let \(\varepsilon &gt; 0\) for each point p in X we associate  \(\phi(p)\) such that
+        \(q \in, d_X(p, q) &lt; \phi(p) \implies d_Y(f(p), f(q)) &lt; \frac{\varepsilon}{2}\)
+        Let \(J(p)\) be the set of all \(q \in X\) such that
+        $$d_X(p, q) &lt; \frac{1}{2}\phi(p)$$
+        since \(J(p)\) is the set of open we get set of finite subcover such as
+        $$X \subset J(p_1) \cup \cdot \cdot \cdot \cup J(p_n)$$
+        We put
+        $$\delta = \frac{1}{2}[\phi(p_1),....,\phi(p_n)]$$
+        \(\delta &gt; 0\) since there are finite\(J(p)\)'s. Now \(p\) and \(q\) be points of \(X\), such that \(d_X(p, q) &lt; \delta \implies p \in J(p_m)\)
+        $$d_X(p, p_m) &lt; \frac{1}{2}\phi(p_m)$$
+        and we also have
+        $$d_X(q, p_m) \leq d_X(p, q) + d_X(p, p_m) \leq \phi(p_m)$$
+        Finally we have
+        $$d_Y(f(p), f(q)) \leq d_Y(f(p), f(p_m)) + d_Y(f(q), f(q_m)) &lt; \varepsilon$$
     </p>
+    <h3>4.22 Theorem</h3>
+    <p>
+        Assume \(f(E) =A \cup B, A\) and \(B\) are separated, put \(G=E \cap f^{-1}(A), H=E \cap f^{-1}(B)\) Now \(G \subset f(\overline{A}) \implies \overline{G} \subset f^{-1}(\overline{A})\) since \(\overline{A}\) is closed. \(f(\overline{G}) \subset \overline{A}\) and \(f(H) =B\) we conclude \(\overline{G} \cap H\) is empty similarly we can show \(\overline{H} \cap G\) is empty. Thus contradicting the connectedness of \(E\).
+    </p>
+    <h3>5.9 Theorem</h3>
+    <p>
+        let, $$h(t) =[f(b) - f(a)] g(t) - [g(b) - g(a)]f(t)$$ using theorem 4.16 \(h\) attains a maximum at some point \(x \implies h'(x) =0\). Rest follows
+    </p>
+
 </div>
 </body>
 </html>
