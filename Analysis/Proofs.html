@@ -64,7 +64,13 @@
     <p>
         let, $$h(t) =[f(b) - f(a)] g(t) - [g(b) - g(a)]f(t)$$ using theorem 4.16 \(h\) attains a maximum at some point \(x \implies h'(x) =0\). Rest follows
     </p>
-
+    <h3>Taylor's theorem</h3>
+    <p>
+        Let M be the number defined by $$f(\beta)= P(\beta) + M (\beta-\alpha)^n$$
+        and put $$p(t)=f(t)-P(t)-M(t-\alpha)^n (a \leq t \leq b)$$
+        $$\implies g^{(n)}(t)=f^{(n)}(t)-n!M$$ 
+        Since \(P^{(k)}(\alpha)=f^{(k)}(\alpha)\) for all \(k &lt; n\) \(g^{(k)}(\alpha)=0\) by our choice of \(M\) shows that \(g(\beta)=0\), so that \(g’(x_1)=0\) for some \(x_1\) between \(\alpha\) and \(\beta\), by mean value theorem. Since \(g’(\alpha)\) is zero we conclude that \(g’’(x_2)=0\) for some \(x_2\) in between \(\alpha\) and \(x_1\). Similarly \(g^{(n)}(x_n)=0\)
+    </p>
 </div>
 </body>
 </html>

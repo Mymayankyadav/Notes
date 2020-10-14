@@ -110,15 +110,25 @@
         If the condition in 4 holds for the point \(x\) of \(X\), we say that <b>\( f\) is continuous at
         the point \(x\)</b>.  
     </p>
-    <h3>7.3 Theorem</h3>
+    <h3>Theorem 18.2 (Rules for constructing continuous functions)</h3>
     <p>
-        If \(X\), \(Y\) and \(Z\) are topological spaces and \(f : X \to Y\) and \(g : Y \to Z\) are continuous, then \(g \circ f : X \to Z\) is continuous.  
+        Let \(X\), \(Y\), and \(Z\) be topological spaces.
+        <ol>
+            <li>(Constant function) If \(f : X \to Y\) maps all of \(X\) into the single point \(y_0\) of \(Y\), then f is continuous.</li>
+            <li>(Inclusion) If \(A\) is a subspace of \(X\), the inclusion function \(j : A \to X\) is continuous.</li>
+            <li>(Composites) If \(f : X \to Y\) and \(g : Y \to Z\) are continuous, then the map \(g \circ f : X \to Z\) is continuous.</li>
+            <li>(Restricting the domain) If \(f : X \to Y\) is continuous, and if \(A\) is a subspace of \(X\), then the restricted function \(f |A : A \to Y\) is continuous.</li>
+            <li>(Restricting or expanding the range) Let \(f : X \to Y\) be continuous. If \(Z\) is a subspace of \(Y\) containing the image set \(f (X)\), then the function \(g : X \to Z\) obtained by restricting the range of \(f\) is continuous. If \(Z\) is a space having \(Y\) as a subspace, then the function \(h : X \to Z\) obtained by expanding the range of \(f\) is continuous.</li>
+            <li>(Local formulation of continuity) The map \(f : X \to Y\) is continuous if \(X\) can be written as the union of open sets \(U_{\alpha}\) such that \(f |U_{\alpha}\) is continuous for each \(\alpha\).</li>
+        </ol>
     </p>
-    <h3>7.5 Theorem</h3>
+    <h3>Theorem 18.3 (The pasting lemma). </h3>
     <p>
-        Restriction, on the subset, of continuous function is continuous.
+        Let \(X = A \cup B\), where \(A\) and \(B\) are closed
+        in \(X\). Let \(f : A \to Y\) and \(g : B \to Y\) be continuous. If \(f (x) = g(x)\) for every
+        \(x \in A \cap B\), then \(f\) and \(g\) combine to give a continuous function \(h : X \to Y\), defined
+        by setting \(h(x) = f (x)\) if \(x \in A\), and \(h(x) = g(x)\) if \(x \in B\).  
     </p>
-
 </div>
 </body>
 </html>

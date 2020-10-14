@@ -87,6 +87,50 @@
     <p>
         Suppose \(f\) is a real differentiable function on \([a,b]\) and suppose \(f’(a) &lt; \lambda &lt; f’(b)\). Then there is a point \(x \in (a,b)\) such that \(f’(x)=\lambda\).
     </p>
+    <h3>Taylor's theorem</h3>
+    <p>
+        Suppose \(f\) is a real function on \([a, b], n\) is a positive integer \(f^{(n -1)}\) is continuous on \([a, b], f^{(n)}\) exists for every \(t \in [a,b]\) let \(\alpha, \beta\) be distinct points of \([a, b]\) and define
+        $$P(t) = \sum^{n-1}_{k=0} \frac{f^{(k)}(\alpha)} {k!} (t-\alpha)^{k}$$
+        Then there exists a point \(x\) between \(\alpha\) and \(\beta\) such that
+        $$f(\beta) =P(\beta) +\frac{f^{(n)}(x)} {n!} (\beta-\alpha)^{n}$$
+    </p>
+    <h3>6.6 Theorem</h3>
+    <p>
+        \(f\) is Riemann integrable on \([a, b]\) if and only if for every \(\varepsilon &gt; 0\) there exists a partition \(P\) such that 
+        $$U(P, f, \alpha) – L(P, f,\alpha) &lt; \varepsilon$$
+    </p>
+    <h3>6.8 Theorem</h3>
+    <p>
+        If \(f\) is continuous on \([a,b]\) then \(f\) is Riemann integrable \([a,b]\)
+    </p>
+    <h3>6.9 Theorem</h3>
+    <p>
+        If \(f\) is monotonic function on \([a,b]\) and if \(\alpha\) is continuous on \([a,b]\), then \(f\) is Riemann integrable
+    </p>
+    <h3>6.10 Theorem</h3>
+    <p>
+        Suppose \(f\) is bounded on \([a,b]\), \(f\) has only finitely many discontinuity on \([a,b]\) and \(\alpha\) is 
+        continuous at every point at which \(f\) is discontinuous. Then \(f\) is Riemann integrable.
+    </p>
+    <h3>6.11 Theorem</h3>
+    <p>
+        Compostion of Continuous fuction with Riemann integrable function is also Riemann integrable.
+    </p>
+    <h3>6.17 Theorem</h3>
+    <p>
+        Assume \(\alpha\) increases monotonically and \(\alpha'\) is Riemann integrable on \([a,b]\). Let \(f\)
+        be a bounded real function on \([a,b]\). <br>
+        Then \(f\) in Riemann integrable iff \(f\alpha'\) is Riemann integrable. In that case
+        $$\int_{a}^{b}fd\alpha = \int_{a}^{b} f(x)\alpha'(x)dx$$
+    </p>
+    <h3>6.19 Theorem (change of variables)</h3>
+    <p>
+        Suppose \(\varphi\) is strictly increasing function continuous function that maps an interval \([A,B]\) onto \([a,b]\).
+        Suppose \(\alpha\) is monotonically increasing function on \([a,b]\) and \(f\) is Riemann integrable. Define \(\beta\) and \(g\) on
+        \([A,B]\) by $$\beta(y)=\alpha(\varphi(y))$$
+        Then \(g\) is Riemann integrable and 
+        $$\int_{A}^{B} g d\beta= \int_{a}^{b}f d\alpha$$
+    </p>
 </div>
 </body>
 </html>

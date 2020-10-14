@@ -48,6 +48,26 @@
         $$f'(x) =\lim_{t \to x} \phi(t)$$
         provided that limit exists
     </p>
+    <h3>Partition</h3>
+    <p>
+        Let \([a, b]\) be a given interval. By a partition \(P\) of \([a, b]\) we mean a finite set of points \(x_0, x_1, ..., x_n\), where
+        $$a = x_0 \leq x_1 \leq \leq x_n = b.$$
+        We write
+        $$\Delta x_i = x_i – x_{i-1} , (i = 1, ..., n)$$
+    </p>
+    <h3>Riemann-Stieltjes Integral</h3>
+    <p>
+        Let \(\alpha\) be a monotonically increasing function on \([a, b]\) (since \(\alpha(a)\) and \(\alpha(b)\)  are finite, it follows that \(a\) is bounded on \([a, b]\)). Corresponding to each partition \(P\) of \([a, b]\), we write
+        $$\Delta \alpha_{i}= \alpha(x_i) - \alpha(x_{i-1})$$. It is clear that \(\Delta \alpha_i \geq 0\). For any real function \(f\) which is bounded on \((a, b)\) we put
+        $$U(P,f, \alpha) = \sum^{n}_{i=1}M_{i} \Delta \alpha_i$$ ,
+        $$L(P,f, \alpha) = \sum^{n}_{i=1}m_{i} \Delta \alpha_i$$ ,
+        where \(M_i=sup(f(x)), m_i=inf(f(x))\) for \(x\) in \((x_{i-1}\leq x\leq x_i)\)
+        $$\overline{\int_{a}^{b}}= inf(U(P,f, \alpha)$$, 
+        $$\underline{\int_{a}^{b}}= sup(L(P,f, \alpha))$$
+        the inf and sup again being taken over all partitions.
+        If the left members of (5) and (6) are equal, we denote their common value by
+        $$\int^b_{a} f d\alpha$$
+    </p>
 </div>
 </body>
 </html>
